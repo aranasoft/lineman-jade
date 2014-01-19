@@ -7,7 +7,7 @@
     "grunt",
     "jade"
   ],
-  "version": "0.0.2",
+  "version": "0.1.0",
   "homepage": "https://github.com/aranasoft/lineman-jade",
   "author": "Arana Software <info@aranasoft.com> (http://www.aranasoft.com)",
   "contributors": [
