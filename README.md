@@ -1,4 +1,4 @@
-# lineman-coffeelint
+# lineman-jade
 
 Build Jade pages and templates within your [Lineman](http://linemanjs.com) application. This plugin uses the [grunt-contrib-jade](https://github.com/gruntjs/grunt-contrib-jade) task.
 
