@@ -7,7 +7,7 @@
     "grunt",
     "jade"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/aranasoft/lineman-jade",
   "author": "Arana Software <info@aranasoft.com> (http://www.aranasoft.com)",
   "contributors": [
@@ -28,7 +28,7 @@
     "coffee-script": "~1.6.3"
   },
   "peerDependencies": {
-    "lineman": ">= 0.19.0"
+    "lineman": ">= 0.23.1"
   },
   "licenses": [
     {

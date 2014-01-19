@@ -9,9 +9,6 @@ Build Jade pages and templates within your [Lineman](http://linemanjs.com) appli
 $ npm install lineman-jade --save-dev
 ```
 
-## Usage
-
-
 
 ## License
 
