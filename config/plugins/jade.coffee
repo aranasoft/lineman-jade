@@ -28,6 +28,10 @@ module.exports = (lineman) ->
       pagesDev:
         options:
           pretty: true
+          data:
+            js: "js/app.js"
+            css: "css/app.css"
+            pkg: "<%= pkg %>"
         files: [{
           expand: true
           src: "<%= files.jade.pages %>"
@@ -35,8 +39,12 @@ module.exports = (lineman) ->
           dest: "generated/"
           ext: ".html"
         }]
-        context: "<%= pages.dev.context %>"
       pagesDist:
+        options:
+          data:
+            js: "js/app.js"
+            css: "css/app.css"
+            pkg: "<%= pkg %>"
         files: [{
           expand: true
           src: "<%= files.jade.pages %>"
@@ -44,7 +52,6 @@ module.exports = (lineman) ->
           dest: "dist/"
           ext: ".html"
         }]
-        context: "<%= pages.dist.context %>"
 
     watch:
       jadePages:
