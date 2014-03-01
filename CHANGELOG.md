@@ -1,3 +1,8 @@
+## v0.1.2
+Released 1-March-2014
+
+ - Fixed issue where plugin was watching all files. Set to Jade Pages and Templates. (@nupf)
+ 
 ## v0.1.1
 Released 19-January-2014
 
