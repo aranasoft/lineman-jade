@@ -55,7 +55,7 @@ module.exports = (lineman) ->
 
     watch:
       jadePages:
-        files: "<%= files.jade.pages %>"
+        files: ["<%= files.jade.pageRoot %><%= files.jade.pages %>", "<%= files.jade.templates %>"]
         tasks: ["jade:pagesDev"]
       jadeTemplates:
         files: "<%= files.jade.templates %>"
