@@ -8,16 +8,14 @@ module.exports = (lineman) ->
     template:
       jade: "app/templates/**/*.jade"
       generatedJade: "generated/template/jade.js"
-    pages:
-      source: lineman.config.files.pages.source.concat("!<%= files.jade.pageRoot %>/<%= files.jade.pages %>")
 
   config:
     loadNpmTasks: lineman.config.application.loadNpmTasks.concat('grunt-contrib-jade')
 
     prependTasks:
       common: ["jade:templates"].concat(lineman.config.application.prependTasks.common)
-      dev: lineman.config.application.prependTasks.common.concat("jade:pagesDev")
-      dist: lineman.config.application.prependTasks.common.concat("jade:pagesDist")
+      dev: lineman.config.application.prependTasks.dev.concat("jade:pagesDev")
+      dist: lineman.config.application.prependTasks.dist.concat("jade:pagesDist")
 
     jade:
       templates:
